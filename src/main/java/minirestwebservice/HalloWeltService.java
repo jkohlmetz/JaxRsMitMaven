@@ -17,7 +17,7 @@ public class HalloWeltService
    @GET @Produces( MediaType.TEXT_HTML )
    public String halloHtml( @QueryParam("name") String name )
    {
-      return "<html><title>HelloWorld</title><body><h2>Html: Guten Tag " + name + "</h2></body></html>";
+      return "<html><title>Hallo "+ name + "</title><body><h2>Html: Guten Tag " + name + "</h2></body></html>";
    }
 }
 

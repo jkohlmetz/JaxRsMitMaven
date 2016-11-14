@@ -16,6 +16,12 @@
         <configuration>
           <source>1.7</source>
           <target>1.7</target>
+          <systemPropertyVariables>
+						<property>
+							<name>grid.server.url</name>
+							<value>${grid.server.url}</value>
+						</property>
+		  </systemPropertyVariables>
         </configuration>
       </plugin>
     </plugins>
@@ -46,5 +52,17 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.0.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.0.1</version>
+			<scope>test</scope>
+  </dependency>    
   </dependencies>
 </project>
