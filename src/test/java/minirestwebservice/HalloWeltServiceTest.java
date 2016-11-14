@@ -30,7 +30,7 @@ public class HalloWeltServiceTest
          String txt = target.path( webContextPath ).queryParam( "name", name ).request( MediaType.TEXT_PLAIN ).get( String.class );
          String htm = target.path( webContextPath ).queryParam( "name", name ).request( MediaType.TEXT_HTML ).get( String.class );
          Assert.assertEquals( "Plain-Text: Guten Tag MeinName", txt );
-         Assert.assertEquals( "<html><title>HelloWorld</title><body><h2>Html: Guten Tag MeinName</h2></body></html>", htm );
+         Assert.assertEquals( "<html><title>Hallo MeinName</title><body><h2>Html: Guten Tag MeinName</h2></body></html>", htm );
 
       } finally {
          // Testserver beenden:
